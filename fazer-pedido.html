@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Honda - Fazer Aluguel</title>
+	<meta charset="utf-8" lang="pt-br">
+	
+	<!--FAV ICON-->
+	<link rel="shortcut icon" href="imagens/fav-icon.png"/>
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/fazer-pedido.css">
+
+	<!--FONTE ICONE-->
+	<link rel="stylesheet" type="text/css" href="fontes/font-icon.css">
+
+	<!-- STYLE SLIDE -->
+	<link rel="stylesheet" type="text/css" href="slide/engine1/style.css" />
+	<!-- FIM STYLE SLIDE -->
+
+	<!-- SCRIPT SLIDE -->
+	<script type="text/javascript" src="slide/engine1/jquery.js"></script>
+	<!-- FIM SCRIPT SLIDE -->
+
+	<!-- STYLE ALERT -->
+	<link rel="stylesheet" type="text/css" href="alertfy/themes/alertify.core.css" />
+	<link rel="stylesheet" type="text/css" href="alertfy/themes/alertify.default.css" />
+	<!-- FIM ALERT SLIDE -->
+
+
+</head>
+
+<body>
+	<header id="cabecalho">
+
+		<div id="divisoria1"></div>
+
+		<section id="divisoriaContato">
+			<div id="englobaDivisoriaContato">
+				<div id="redesSociais">
+					<a href="http://www.facebook.com.br" target="_blank"><h1 title="Curta nossa página no Facebook!" class="icon-facebook-with-circle tamanhoRedeSocialTop"></span></h1></a> <!--FIM FACEBOOK-->
+
+					<a href="https://www.instagram.com/?hl=pt-br" target="_blank"><h1 title="Siga-nos no Instagram!" class="icon-instagram-with-circle tamanhoRedeSocialTop"></span></h1></a> <!--FIM INSTAGRAM-->
+
+					<a href="http://www.youtube.com.br" target="_blank"><h1 title="Acompanhe nosso Canal!" class="icon-youtube-with-circle tamanhoRedeSocialTop"></span></h1></a> <!--FIM YOUTUBE-->
+
+					<a href="https://play.google.com/store/apps/details?id=com.whatsapp&hl=pt" target="_blank"><h1 title="+55 21 90000-0000" class="icon-whatsapp tamanhoRedeSocialTop"></span></h1></a> <!--FIM WHATSAPP-->
+				</div> <!--FIM REDES SOCIAIS-->
+
+				<p class="contatoTop"><span class="icon-phone">    </span>+55 21 0000-0000</p> <!--FIM TELEFONE-->
+			</div>
+		</section> <!--FIM DIVISORIA CONTATO-->
+
+		<section class="divisoria2Cabecalho">
+			<div id="englobaDivisoria2Cabecalho">
+
+
+				<div id="englobaLoginInput">
+					
+					<input type="text" placeholder="Pesquisar ..." class="inputTop" name="inputTopName">
+				</div>
+
+				<nav id="menu">
+					<ul>
+						<a href="index.html"><li class="liMenu">Home</li></a>
+						<a href="sobre.html"><li class="liMenu">Sobre</li></a>
+						<a href="promocoes.html"><li class="liMenu">Promoções</li></a>
+						
+						<a href="contato.html"><li class="liMenu">Contato</li></a>
+					</ul>
+				</nav>  <!--FIM MENU-->
+
+			</div>
+		</section>
+	</header> <!--FIM CABECALHO-->
+
+
+	<article id="corpo">
+		<section class="englobaCorpoFazer_pedido">
+			<div class="englobaBoxPedidos">
+			<form name="frm_FazerPedidos" class="cliente_fazerPedido">
+				<input class="cep" type="text" name="cepN"  placeholder="Digite seu CEP" maxlength="9" OnKeyPress="formatar('#####-###', this)">
+				<a class="cep_link" target="_blank" href="http://www.buscacep.correios.com.br/sistemas/buscacep" title="Não sabe seu CEP?">?</span></a>
+				<input class="rua" type="text" name="ruaN" placeholder="Digite sua Rua" >
+				<input class="cidade" type="text" name="cidadeN" placeholder="Cidade">
+				<input class="numero" type="text" name="numeroN" placeholder="N°">
+				<input class="nome" type="text" name="nomeN" placeholder="Nome Completo">
+				<input class="telefone" type="text" name="telefoneN" placeholder="Telefone" maxlength="12" OnKeyPress="formatar('## ####-####', this)">
+			</form>
+			<!--BOX PEDIDO 1-->
+				<div class="boxPedido1">
+					<img class="imgPedido" src="imagens/motor2.jpg">
+					<h1 class="tituloPedido">Titanium 2.0 AT - 2019</h1>
+					<hr class="hrPedido"></hr>
+					<p style="min-height: 84px;" class="descPedido">O luxo e conforto da versão Titanium chega também ao Novo EcoSport. Além dos detalhes do exterior e interior do carro, que garantem essa sofisticação, como o teto solar automático que abre e fecha ao toque de um botão, a segurança impressiona.</p>
+					<hr class="hrPedido"></hr>
+					<div class="englobaPrecos">
+						<p class="preco_pedido1"><strike>R$..</strike></p>
+						<p class="precoPromocao_pedido1">R$ 35,000</p>
+					</div>
+					<input id="qtPedido1" class="qt_pedido1" type="number" name="qt_pedido1" min="1" max="5" step="1" value="0" onchange="calcula_pedido1()" onkeyup="calcula_pedido1()">
+					<input id="result_Pedido1" class="resultato_pedido1" type="text" name="resultato_pedido1" value="R$ 0.00" disabled>
+					<input id="enviar_pedido1" class="button_adicionar_pedido1" type="button" name="button_adicionar_pedido1" value="Adicionar" onclick="return adiciona_pedido1()">
+				</div>
+			<!-- FIM BOX PEDIDO 1-->
+
+			<!--BOX PEDIDO 2-->
+				<div class="boxPedido2">
+					<img class="imgPedido" src="imagens/motor3.png">
+					<h1 class="tituloPedido">Honda Sivic 2018</h1>
+					<hr class="hrPedido"></hr>
+					<p style="min-height: 84px;" class="descPedido">O luxo e conforto da versão Titanium chega também ao Novo EcoSport. Além dos detalhes do exterior e interior do carro, que garantem essa sofisticação, como o teto solar automático que abre e fecha ao toque de um botão, a segurança impressiona.</p>
+					<hr class="hrPedido"></hr>
+					<div class="englobaPrecos">
+						<p class="preco_pedido1"><strike>R$..</strike></p>
+						<p class="precoPromocao_pedido1">R$ 35,000</p>
+					</div>
+					<input id="qtPedido2" class="qt_pedido2" type="number" name="qt_pedido2" min="1" max="5" step="1" value="0" onchange="calcula_pedido2()" onkeyup="calcula_pedido2()">
+					<input id="result_Pedido2" class="resultato_pedido2" type="text" name="resultato_pedido2" value="R$ 0.00"  disabled>
+					<input id="enviar_pedido2" class="button_adicionar_pedido2" type="button" name="button_adicionar_pedido2" value="Adicionar" onclick="return adiciona_pedido2()">
+				</div>
+			<!-- FIM BOX PEDIDO 2-->
+
+			<!-- BOX PEDIDO 3-->
+				<div class="boxPedido3">
+					<img class="imgPedido" src="imagens/motor4.jpg">
+					<h1 class="tituloPedido">Ferrari</h1>
+					<hr class="hrPedido"></hr>
+					<p style="min-height: 84px;" class="descPedido">O luxo e conforto da versão Titanium chega também ao Novo EcoSport. Além dos detalhes do exterior e interior do carro, que garantem essa sofisticação, como o teto solar automático que abre e fecha ao toque de um botão, a segurança impressiona.</p>
+					<hr class="hrPedido"></hr>
+					<div class="englobaPrecos">
+						<p class="preco_pedido1"><strike>R$..</strike></p>
+						<p class="precoPromocao_pedido1">R$ 35,000</p>
+					</div>
+					<input id="qtPedido3" class="qt_pedido3" type="number" name="qt_pedido3" min="1" max="5" step="1" value="0" onchange="calcula_pedido3()" onkeyup="calcula_pedido3()">
+					<input id="result_Pedido3" class="resultato_pedido3" type="text" name="resultato_pedido3" value="R$ 0.00"  disabled>
+					<input id="enviar_pedido3" class="button_adicionar_pedido3" type="button" name="button_adicionar_pedido3" value="Adicionar" onclick="return adiciona_pedido3()">
+				</div>
+			<!-- FIM BOX PEDIDO 3-->
+
+			<!-- BOX PEDIDO 4-->
+				<div class="boxPedido4">
+					<img class="imgPedido" src="imagens/motor5.jpg">
+					<h1 class="tituloPedido">Camaro</h1>
+					<hr class="hrPedido"></hr>
+					<p style="min-height: 84px;" class="descPedido">O luxo e conforto da versão Titanium chega também ao Novo EcoSport. Além dos detalhes do exterior e interior do carro, que garantem essa sofisticação, como o teto solar automático que abre e fecha ao toque de um botão, a segurança impressiona.</p>
+					<hr class="hrPedido"></hr>
+					<div class="englobaPrecos">
+						<p class="preco_pedido1"><strike>R$..</strike></p>
+						<p class="precoPromocao_pedido1">R$ 35,000</p>
+					</div>
+					<input id="qtPedido4" class="qt_pedido4" type="number" name="qt_pedido4" min="1" max="5" step="1" value="0" onchange="calcula_pedido4()" onkeyup="calcula_pedido4()">
+					<input id="result_Pedido4" class="resultato_pedido4" type="text" name="resultato_pedido4" value="R$ 0.00"  disabled>
+					<input id="enviar_pedido4" class="button_adicionar_pedido4" type="button" name="button_adicionar_pedido4" value="Adicionar" onclick="return adiciona_pedido4()">
+				</div>
+			<!-- FIM BOX PEDIDO 4-->
+
+			<!-- BOX PEDIDO 5-->
+				<div class="boxPedido5">
+					<img class="imgPedido" src="imagens/motor6.jpg">
+					<h1 class="tituloPedido">EcoSport</h1>
+					<hr class="hrPedido"></hr>
+					<p style="min-height: 84px;" class="descPedido">O luxo e conforto da versão Titanium chega também ao Novo EcoSport. Além dos detalhes do exterior e interior do carro, que garantem essa sofisticação, como o teto solar automático que abre e fecha ao toque de um botão, a segurança impressiona.</p>
+					<hr class="hrPedido"></hr>
+					<div class="englobaPrecos">
+						<p class="preco_pedido1"><strike>R$..</strike></p>
+						<p class="precoPromocao_pedido1">R$ 35,000</p>
+					</div>
+					<input id="qtPedido5" class="qt_pedido5" type="number" name="qt_pedido5" min="1" max="5" step="1" value="0" onchange="calcula_pedido5()" onkeyup="calcula_pedido5()">
+					<input id="result_Pedido5" class="resultato_pedido5" type="text" name="resultato_pedido5" value="R$ 0.00"  disabled>
+					<input id="enviar_pedido5" class="button_adicionar_pedido5" type="button" name="button_adicionar_pedido5" value="Adicionar" onclick="return adiciona_pedido5()">
+				</div>
+			<!-- FIM BOX PEDIDO 5-->
+
+			<!-- BOX PEDIDO 6-->
+				<div class="boxPedido6">
+					<img class="imgPedido" src="imagens/motor7.png">
+					<h1 class="tituloPedido">Fiat Sandero</h1>
+					<hr class="hrPedido"></hr>
+					<p style="min-height: 84px;" class="descPedido">O luxo e conforto da versão Titanium chega também ao Novo EcoSport. Além dos detalhes do exterior e interior do carro, que garantem essa sofisticação, como o teto solar automático que abre e fecha ao toque de um botão, a segurança impressiona.</p>
+					<hr class="hrPedido"></hr>
+					<div class="englobaPrecos">
+						<p class="preco_pedido1"><strike>R$..</strike></p>
+						<p class="precoPromocao_pedido1">R$ 35,000</p>
+					</div>
+					<input id="qtPedido6" class="qt_pedido6" type="number" name="qt_pedido6" min="1" max="5" step="1" value="0" onchange="calcula_pedido6()" onkeyup="calcula_pedido6()">
+					<input id="result_Pedido6" class="resultato_pedido6" type="text" name="resultato_pedido6" value="R$ 0.00"  disabled>
+					<input id="enviar_pedido6" class="button_adicionar_pedido6" type="button" name="button_adicionar_pedido6" value="Adicionar" onclick="return adiciona_pedido6()">
+				</div>
+			<!-- FIM BOX PEDIDO 6-->
+
+			
+
+			</div>
+			<section id="box_meuPedido" class="meuPedido">
+				<h2 class="h2_qtPedidos">Meu Pedido</h2>
+				<hr class="hrPedido"></hr>
+
+				<h2 class="h2_meuPedido">Pedidos</h2>
+				<p id="num_pedidos" class="numPedidos">0</p>
+				<hr class="hrPedido"></hr>
+
+
+				<h2 id="sub_total" style="display: none;" class="h2_meuPedido">Subtotal</h2>
+				<p id="p_sub_total" style="display: none;" class="vlSubtotal">R$ 148,00</p>
+				<hr id="hr_sub_total" style="display: none;" class="hrPedido"></hr>
+				
+
+				<h2 id="titulo_pedido1" style="display: none;" class="h2_qtPedidos">Pedido 1</h2>
+				<p id="quantidadePedido1" style="display: none;" class="qtPedido1">Quantidade: 1</p>
+				<p id="valorPedido1" style="display: none;" class="vlPedido1">R$ 10,00</p>
+				<hr id="hrPedido1" style="display: none;" class="hrPedido"></hr>
+
+
+				<h2 id="titulo_pedido2" style="display: none;" class="h2_qtPedidos">Pedido 2</h2>
+				<p id="quantidadePedido2" style="display: none;" class="qtPedido2">Quantidade: 2</p>
+				<p id="valorPedido2" style="display: none;" class="vlPedido2">R$ 22,00</p>
+				<hr id="hrPedido2"  style="display: none;" class="hrPedido"></hr>
+				
+				<h2 id="titulo_pedido3" style="display: none;" class="h2_qtPedidos">Pedido 3</h2>
+				<p id="quantidadePedido3" style="display: none;" class="qtPedido3">Quantidade: 5</p>
+				<p id="valorPedido3" style="display: none;" class="vlPedido3">R$ 56,00</p>
+				<hr id="hrPedido3"  style="display: none;" class="hrPedido"></hr>
+				
+
+				<h2 id="titulo_pedido4" style="display: none;" class="h2_qtPedidos">Pedido 4</h2>
+				<p id="quantidadePedido4" style="display: none;" class="qtPedido4">Quantidade: 3</p>
+				<p id="valorPedido4" style="display: none;" class="vlPedido4">R$ 42,00</p>
+				<hr id="hrPedido4"  style="display: none;" class="hrPedido"></hr>
+				
+
+				<h2 id="titulo_pedido5" style="display: none;" class="h2_qtPedidos">Pedido 5</h2>
+				<p id="quantidadePedido5" style="display: none;" class="qtPedido5">Quantidade: 1</p>
+				<p id="valorPedido5" style="display: none;" class="vlPedido5">R$ 18,00</p>
+				<hr id="hrPedido5"  style="display: none;" class="hrPedido"></hr>
+				
+
+				<img id="icon_frete" style="display: none;" class="iconFrete_fazer_pedido" src="imagens/icon-frete_fazer_pedido.png">
+				<p id="p_frete" style="display: none;" class="vlFrete">R$ 00,00</p>
+				<hr id="hr_frete" style="display: none;" class="hrPedido"></hr>
+				
+
+				<h2 class="h2_meuPedido">Total</h2>
+				<p id="vl_total" class="vlTotal">R$ 00,00</p>
+				<input class="finalizarPedido" type="button" name="finalizarPedido" value="Finalizar Pedido" onclick="checagemFormFP(frm_FazerPedidos.cepN.value, frm_FazerPedidos.ruaN.value, frm_FazerPedidos.cidadeN.value, frm_FazerPedidos.numeroN.value, frm_FazerPedidos.nomeN.value, frm_FazerPedidos.telefoneN.value), checagemFinal()">
+
+				<input class="zerarPedido" type="button" name="finalizarPedido" value="Zerar Pedido" onclick="zeraPedido()">
+
+			</section>
+		<p id="erroFP"><b>Por favor, preencha todos os campos do formulário para finalizar o pedido.</b></p>
+		</section>
+
+	</article> <!--FIM CORPO-->
+
+	<footer class="rodape">
+		<div id="redesSociaisFooter">
+			<div id="englobaSocialFooter">
+				<div id="voltaInicio">
+					<a class="scroll" href="#cabecalho"><h1 title="Voltar para o início!" class="icon-circle-up tamanhoRedeSocialTop"></span></h1></a> <!--FIM VOLTA INICIO-->
+				</div>
+				<div id="redesSociais">
+						<a href="http://www.facebook.com.br" target="_blank"><h1 title="Curta nossa página no Facebook!" class="icon-facebook-with-circle tamanhoRedeSocialTop"></span></h1></a> <!--FIM FACEBOOK-->
+
+						<a href="https://www.instagram.com/?hl=pt-br" target="_blank"><h1 title="Siga-nos no Instagram!" class="icon-instagram-with-circle tamanhoRedeSocialTop"></span></h1></a> <!--FIM INSTAGRAM-->
+
+						<a href="http://www.youtube.com.br" target="_blank"><h1 title="Acompanhe nosso Canal!" class="icon-youtube-with-circle tamanhoRedeSocialTop"></span></h1></a> <!--FIM YOUTUBE-->
+
+						<a href="https://play.google.com/store/apps/details?id=com.whatsapp&hl=pt" target="_blank"><h1 title="+55 21 90000-0000" class="icon-whatsapp tamanhoRedeSocialTop"></span></h1></a> <!--FIM WHATSAPP-->
+				</div> <!--FIM REDES SOCIAIS-->
+			</div>
+		</div>
+		<div id="direitosLinhaCima"></div>
+		<div id="direitosReservados">
+			<p align="center">© Copyright 2017 - Honda - Todos os direitos reservados</p>
+		</div>
+	</footer> <!--FIM RODAPÉ-->
+
+	<script>
+	function formatar(mascara, documento){
+	  var i = documento.value.length;
+	  var saida = mascara.substring(0,1);
+	  var texto = mascara.substring(i)
+	  
+	  if (texto.substring(0,1) != saida){
+	            documento.value += texto.substring(0,1);
+	  }
+	  
+	}
+	</script>
+
+	<!--JQUERY-->
+	<script type="text/javascript" src="jquery/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery/funcoes-jquery.js"></script>
+	
+	<!--JAVASCRIPT-->
+	<script type="text/javascript" src="javascript/funcoes-javascript.js"></script>
+
+	<!-- SCRIPT ALERT -->
+	<script type="text/javascript" src="alertfy/js/alertify.min.js"></script>
+	<!-- FIM SCRIPT ALERT -->
+	
+</body>
+</html>
